@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css" />
+  <link rel="stylesheet" href="home.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+  <main class="signup-container">
+    <div class="left-side">
+      <img src="logo.png.png" alt="Logo">
+      <h3><b>FraudHunt</b></h3>
+    </div>
+    <div class="right-side">
+      <h2>🚀 Create Account</h2>
+      <form id="signupForm">
+        <input type="text" id="full_name" name="full_name" placeholder="👤 Full Name" required />
+        <input type="date" id="dob" name="dob" required />
+        <input type="tel" id="phone" name="phone" placeholder="📞 Phone Number" pattern="[0-9]{10}" required />
+        <input type="tel" id="alt_phone" name="alt_phone" placeholder="📱 Alternate Phone Number" pattern="[0-9]{10}" />
+        <input type="email" id="email" name="email" placeholder="📧 Email" required />
+        <input type="password" id="pwd" name="password" placeholder="🔒 Password" required />
+        <input type="submit" value="Register 🚀" />
+        <div class="login-link">
+          Already have an account? <a href="login.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init("bWdsr_VE8QT2bfwaO"); // Your Public Key
+
+      document.getElementById("signupForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const form = this;
+        const user = {
+          full_name: form.full_name.value,
+          dob: form.dob.value,
+          phone: form.phone.value,
+          alt_phone: form.alt_phone.value,
+          email: form.email.value,
+          password: form.password.value
+        };
+
+        // Save to localStorage
+        localStorage.setItem("userData", JSON.stringify(user));
+
+        // Send email via EmailJS
+        emailjs.sendForm("service_ko4osfj", "template_y7gy843", form)
+          .then(() => {
+            alert("Signup successful. Data sent to your mail.");
+            window.location.href = "login.html";
+          }, (error) => {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send email. Please try again.");
+          });
+      });
+    });
+  </script>
+</body>
+</html>

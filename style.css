@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.progress {
+    background-color:red;
+    height: 0.4vh;
+    animation-name: load;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 2;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0vw;
+    }
+
+    20% {
+        width: 20vw;
+    }
+
+    50% {
+        width: 50vw;
+    }
+
+    70% {
+        width: 70vw;
+
+    }
+
+    90% {
+        width: 90vw;
+
+    }
+}
+
+header {
+  display: inline-block;
+  border: 1px solid black;
+    height: fit-content;
+    position: fixed;
+    width: 100%;
+    color: transparent;
+}
+nav{
+    
+    background-color:white;
+}
+
+nav ul {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+        background-color:aliceblue;
+
+  justify-content: center;
+    list-style: none;
+    padding: 0 22px 2px;
+    margin: 10px;
+}
+#login {
+    background-color: red;
+    font-size: larger;
+    
+}
+#login a:hover{
+    color: white;
+    font-size: larger;
+}
+
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: larger;
+
+}
+
+ nav ul li:hover {
+    background-color: skyblue;
+ }
+ nav ul li a:hover {
+  font-style: bold;
+    font-size: 20px;
+    color: black;
+}
+
+#logo {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    color:darkblue;
+    margin: 0;
+    padding-right: 100px;
+    height: 3ch;
+    width: 4ch;
+   
+   
+
+}
+
+#home {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-color:skyblue;
+    height: fit-content;
+    width: 100%;
+
+}
+#home{
+    background-image: url("https://media.istockphoto.com/id/1395523535/vector/projection-of-a-credit-card-on-background-of-a-billboard-money-and-payment-target-page-for.jpg?s=612x612&w=0&k=20&c=6KOmtlXkg8De-FAUgavU6dcm-6KQ78jQG_DzIfxSOSg=");
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 100%;
+}
+
+
+
+.text {
+    height: 100%;
+    text-align: left;
+    padding: 120px;
+}
+
+h1{
+    margin: 30px;
+    font-size: 40px;
+    font-style: italic;
+    color:darkblue;
+
+}
+h2 { 
+    margin: 30px;
+    font-size: 30px;
+    font-style: italic;
+    color:white;
+}
+.c {
+    height:fit-content;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.c a {
+    justify-content: center;
+    width: 300px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0 10px;
+    padding: 12px 0;
+    color: darkblue;
+    border: 1px solid skyblue;
+    font-style: italic;
+    background-color: aliceblue;
+    font-size: 20px;
+
+}
+
+.c a:hover {
+    background-color: skyblue;
+    width: 350px;
+    border: 1px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    padding-top: 30px;
+    background-color: white;
+    height:20vh;
+    width: 100%;
+    position: sticky;
+
+}
+
+footer ul {
+ 
+    float:  right;
+    float: inline-end;
+    padding: 10px;
+}
+
+footer ul li {
+    font-size: large;
+    list-style: circle;
+    padding-right: 60px;
+
+}
+
+footer ul li a,p {
+    color:darkblue;
+    text-decoration: none;
+    font-size:medium;
+}
+footer ul li a:hover {
+    color: grey;
+    text-decoration: none;
+    font-size:large;
+}
+
+
