@@ -31,38 +31,4 @@ FraudHunt is an intelligent and intuitive web-based platform designed to **detec
 | JavaScript   | ✅ Vanilla JS (Form validation, interactions) |
 | Google Fonts | ✅ Poppins                                    |
 
-**Here is the live site [Fraud-Hunt](https://kaif-g.github.io/FRAUD_HUNT/)**
----
-
-### 🛡️ Government Collaboration
-
-FraudHunt proudly partners with the **Indian Cyber Crime Coordination Centre (I4C)** under the **Ministry of Home Affairs**. Users can seamlessly navigate to the official government portal to report serious cybercrimes.
-
-🔗 **Report directly**: [https://www.cybercrime.gov.in/](https://www.cybercrime.gov.in/)
----
-
-### 🚀 Getting Started
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/kaif-g/fraudhunt.git
-```
-
-2. Open `index.html` in your browser.
-
-
-
-### 🧠 Future Enhancements
-
-* 🔎 AI-based fraud detection engine (coming soon)
-* 📱 Progressive Web App (PWA) support
-* 🔐 Full backend integration with email/SMS OTP validation
-* 🧾 User-submitted scam reports and fraud database
-
----
-
-### 📄 License
-
-This project is licensed for academic and demo purposes. Collaboration with Government of India acknowledged but not affiliated for enforcement.
 
