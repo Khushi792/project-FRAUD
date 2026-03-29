@@ -207,5 +207,106 @@ footer ul li a:hover {
     text-decoration: none;
     font-size:large;
 }
+/* ========== RESPONSIVE DESIGN ========== */
 
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    #logo {
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .text {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .c a {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .c a:hover {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+    }
+
+    footer ul {
+        float: none;
+        padding: 0;
+    }
+
+    footer ul li {
+        padding: 5px 0;
+    }
+}
+
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+
+    header {
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .text {
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .c a {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .c a:hover {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #home {
+        background-position: center;
+        height: auto;
+    }
+
+    footer ul li {
+        font-size: 14px;
+    }
+}
 
